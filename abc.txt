@@ -1,1 +1,14 @@
 Namaste!
+$.ajax({  
+                    type: "POST",  
+                    url: "/Home/JqAJAX",  
+                    data: JSON.stringify(Student),  
+                    dataType: "json"  
+                    contentType: 'application/json; charset=utf-8',  
+                    success: function(data) {  
+                        alert(data.msg);  
+                    },  
+                    error: function() {  
+                        alert("Error occured!!")  
+                    }  
+                });  
